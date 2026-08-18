@@ -1,0 +1,10 @@
+services:
+  apache:
+    image: httpd:2.4
+    container_name: lokalni-apache
+    ports:
+      - "8080:80" # Mapuje tvůj lokální port 8080 na port 80 v kontejneru
+    volumes:
+      # Mapuje lokální složku ./html do výchozího document rootu Apache
+      - ./html:/usr/local/apache2/htdocs/
+    restart: unless-stopped
