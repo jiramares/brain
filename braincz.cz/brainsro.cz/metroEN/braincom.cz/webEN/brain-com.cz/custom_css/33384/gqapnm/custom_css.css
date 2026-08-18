@@ -1,0 +1,15 @@
+#portfolio .container {
+    padding: 15px 0;
+}
+
+.media.service-box {
+    margin: 0;
+}
+
+#features .media.service-box:first-child {
+    margin-top: 40px;
+}
+
+.section-header {
+    margin-bottom: 0;
+}
